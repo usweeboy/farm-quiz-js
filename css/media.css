@@ -670,7 +670,11 @@
   .popup-input {
     font-size: 14px;
     height: 48px;
-    padding: 8px 20px;
+    padding: 22px 20px;
+  }
+  .popup-input__wrapper.error .popup-input__error {
+    margin-top: 8px;
+    font-size: 12px;
   }
   .popup-btn {
     padding: 16px 36px;
@@ -948,6 +952,10 @@
   .popup-content {
     padding-top: 22px;
   }
+  .popup-input__wrapper.error .popup-input__error {
+    margin-top: 7px;
+    font-size: 11px;
+  }
   .popup-login__form-row {
     gap: 14px;
   }
@@ -959,11 +967,11 @@
     font-size: 13px;
   }
   .popup-registration__inputs {
-    gap: 14px;
+    gap: 18px;
     padding-bottom: 22px;
   }
   .popup-registration__inputs-grid {
-    gap: 14px;
+    gap: 18px;
     grid-template-columns: repeat(1, 1fr);
   }
   .popup-registration__form-bottom {
@@ -1069,36 +1077,20 @@
     height: 320px;
   }
   .quiz-game__content {
-    gap: 25px;
-  }
-  .quiz-game__question {
-    font-size: 13px;
+    gap: 28px;
   }
   .quiz-game__answers {
-    gap: 10px;
+    gap: 14px;
   }
   .quiz-game__checkbox-label {
-    margin-bottom: 5px;
-    gap: 6px;
-  }
-  .quiz-game__checkbox-input {
-    min-width: 15px;
-    min-height: 15px;
-    margin-top: 2px;
-  }
-  .quiz-game__checkbox-text {
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .quiz-game__answer {
-    font-size: 13px;
-    line-height: 20px;
+    margin-bottom: 7px;
+    gap: 8px;
   }
   .quiz-game__content-bottom {
     gap: 8px;
   }
   .quiz-game__btn {
-    padding: 14px 20px;
+    padding: 16px 20px;
     font-size: 11px;
   }
   .quiz-game__info {
@@ -1242,18 +1234,14 @@
   .popup-input {
     font-size: 13px;
     height: 50px;
-    padding: 8px 18px;
+    padding: 14px 18px;
   }
   .popup-btn {
     padding: 14px 32px;
     font-size: 12px;
   }
   .popup-registration__inputs {
-    gap: 13px;
     padding-bottom: 20px;
-  }
-  .popup-registration__inputs-grid {
-    gap: 13px;
   }
   .popup-registration__form-bottom {
     padding-top: 20px;

@@ -763,6 +763,26 @@ body {
   gap: 20px;
 }
 
+.popup-input__wrapper.error .popup-input {
+  border: 1px solid var(--wrong-color);
+}
+
+.popup-input__wrapper.error .popup-input::placeholder {
+  color: rgba(244, 38, 42, 0.6);
+}
+
+.popup-input__wrapper.error .popup-input {
+  border: 1px solid var(--wrong-color);
+}
+
+.popup-input__wrapper.error .popup-input__error {
+  margin-top: 9px;
+  display: block;
+  line-height: 150%;
+  font-size: 13px;
+  color: rgba(244, 38, 42, 0.8);
+}
+
 .popup-input {
   width: 100%;
   background-color: #f1f1f1; 

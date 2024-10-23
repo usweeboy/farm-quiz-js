@@ -316,3 +316,69 @@ document.addEventListener("DOMContentLoaded", function () {
     phoneInput.addEventListener('paste', onPhonePaste, false);
   }
 });
+
+
+
+// Валидация формы
+const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+function validateForm(form) {
+  let result = true;
+
+  function removeError(input) {
+    const parentElement = input.parentElement;
+
+    if (parentElement.classList.contains("error")) {
+      parentElement.querySelector(".popup-input__error").remove();
+      parentElement.classList.remove("error");
+    }
+  }
+
+  function createError(input, error) {
+    const parentElement = input.parentElement;
+    const errorMessage = document.createElement("label");
+
+    parentElement.classList.add("error");
+
+    errorMessage.classList.add("popup-input__error");
+    errorMessage.textContent = error;
+
+    parentElement.append(errorMessage);
+  }
+
+  const formInputs = form.querySelectorAll('input');
+
+  for (const input of formInputs) {
+    removeError(input);
+
+    if (input.dataset.required === "true") {
+      if (input.value.trim() === "") {
+        removeError(input);
+        createError(input, "Поле обязательно к заполнению!");
+        result = false;
+      }
+    }
+
+    if (input.dataset.emailInput === "true") {
+      if (!EMAIL_REGEXP.test(input.value.trim().toLowerCase())) {
+        removeError(input);
+        createError(input, "Некорректный адрес электронной почты!");
+        result = false;
+      }
+    }
+  }
+
+  return result;
+}
+
+const forms = document.querySelectorAll("form");
+
+forms.forEach((form) => {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+  
+    if (validateForm(form) === true) {
+      alert("Форма успешно отправлена");
+    }
+  });
+});
