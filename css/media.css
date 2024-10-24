@@ -467,8 +467,37 @@
     line-height: 22px;
   }
   .quiz-game__btn {
-    padding: 16px 32px;
     font-size: 13px;
+  }
+  .quiz-product {
+    gap: 30px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .quiz-product__image {
+    min-height: 310px;
+  }
+  .quiz-product__info {
+    gap: 12px;
+  }  
+  .quiz-product__list {
+    gap: 18px;
+  }
+  .quiz-product__item-extra {
+    gap: 8px;
+  }
+  .quiz-product__item-circle {
+    min-width: 16px;
+    min-height: 16px;
+  }
+  .quiz-product__item-title {
+    margin-bottom: 8px;
+    padding-left: 24px;
+  }
+  .quiz-product__item-title::before {
+    top: 3px;
+    width: 16px;
+    height: 16px;
   }
   .quiz-result {
     gap: 28px;
@@ -660,8 +689,8 @@
     padding-top: 25px;
   }
   .popup-login__form-row {
-    gap: 16px;
-    margin-bottom: 12px;
+    gap: 20px;
+    margin-bottom: 13px;
     flex-direction: column;
   }
   .popup-login__form-inputs {
@@ -957,7 +986,7 @@
     font-size: 11px;
   }
   .popup-login__form-row {
-    gap: 14px;
+    gap: 18px;
   }
   .popup-login__form-inputs {
     gap: 14px;
@@ -1097,6 +1126,42 @@
     font-size: 9px;
     line-height: 13px;
   }
+  .quiz-product {
+    gap: 24px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .quiz-product__image {
+    min-height: 310px;
+    padding: 20px;
+  }
+  .quiz-product__image img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  .quiz-product__info {
+    gap: 10px;
+  }  
+  .quiz-product__list {
+    gap: 17px;
+  }
+  .quiz-product__item-extra {
+    gap: 10px;
+  }
+  .quiz-product__item-circle {
+    min-width: 14px;
+    min-height: 14px;
+  }
+  .quiz-product__item-title {
+    margin-bottom: 7px;
+    padding-left: 22px;
+  }
+  .quiz-product__item-title::before {
+    top: 3px;
+    min-width: 14px;
+    min-height: 14px;
+  }
   .quiz-result {
     gap: 16px;
   }
@@ -1220,7 +1285,7 @@
     font-size: 13px;
   }
   .popup-login__form-row {
-    gap: 13px;
+    gap: 16px;
   }
   .popup-login__form-inputs {
     gap: 13px;
@@ -1317,6 +1382,26 @@
   }
   .quiz-game__content {
     gap: 24px;
+  }
+  .quiz-product {
+    gap: 20px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .quiz-product__list {
+    gap: 15px;
+  }
+  .quiz-product__image {
+    min-height: 280px;
+    padding: 15px;
+  }
+  .quiz-product__item-circle {
+    min-width: 13px;
+    min-height: 13px;
+  }
+  .quiz-product__item-title::before {
+    min-width: 13px;
+    min-height: 13px;
   }
   .quiz-result {
     gap: 15px;

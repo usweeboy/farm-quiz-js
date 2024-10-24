@@ -99,6 +99,7 @@ if (quizItems.length) {
     if (quizPages.length && quizResult && quizBeginning) {
       quizPages.forEach((quizPage) => {
         const quizNext = quizPage.querySelector("[data-quiz-next]");
+        const quizOpenInfo = quizPage.querySelector("[data-quiz-open-info");
         const quizAnswers = quizPage.querySelectorAll("[data-quiz-answer]");
         const quizClose = quizResult.querySelector("[data-quiz-close]");
         const quizResultRights = quizResult.querySelector(
@@ -188,6 +189,25 @@ if (quizItems.length) {
                 quizAnswer.classList.remove("_disabled");
                 quizAnswerCheckbox.checked = false;
               }
+            });
+          });
+        }
+
+        if (quizOpenInfo) {
+          quizOpenInfo.addEventListener("click", () => {
+            quizPage.classList.add("_hidden");
+
+            quizPage.nextElementSibling.classList.remove("_hidden");
+
+            quizPage.nextElementSibling.nextElementSibling.classList.add("_hidden");
+
+            quizPage.nextElementSibling.querySelector("[data-quiz-close-info").addEventListener("click", (e) => {
+              e.preventDefault();
+
+              quizItem.scrollIntoView({ behavior: "smooth" });
+
+              quizPage.nextElementSibling.classList.add("_hidden");
+              quizPage.nextElementSibling.nextElementSibling.classList.remove("_hidden");
             });
           });
         }
