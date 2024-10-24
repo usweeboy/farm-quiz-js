@@ -67,12 +67,13 @@ function uniqArray(array) {
 }
 
 function dataMediaQueries(array, dataSetValue) {
-  const media = Array.from(array).filter(function (item, index, self) {
+  const media = Array.from(array).filter((item) => {
     if (item.dataset[dataSetValue])
       return item.dataset[dataSetValue].split(",")[0];
   });
   if (media.length) {
     const breakpointsArray = [];
+
     media.forEach((item) => {
       const params = item.dataset[dataSetValue];
       const breakpoint = {};
@@ -111,6 +112,7 @@ function dataMediaQueries(array, dataSetValue) {
           matchMedia,
         });
       });
+
       return mdQueriesArray;
     }
   }

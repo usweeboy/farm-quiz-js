@@ -1014,7 +1014,7 @@
     scroll-margin-top: 24px;
   }
   .quiz-top {
-    padding: 22px 0px;
+    padding: 25px 0px;
     gap: 12px;
   }
   .quiz-top__content {
@@ -1322,12 +1322,11 @@
     padding: 0px;
   }
   .quiz {
-    padding: 0px 20px;
-    border-radius: 0px;
+    padding: 0px 23px;
     scroll-margin-top: 0px;
   }
   .quiz-content {
-    padding: 24px 0px 32px;
+    padding: 25px 0px 34px;
   }
   .quiz-info {
     gap: 33px;
@@ -1356,23 +1355,23 @@
     margin-top: 24px;
   }
   .quiz-preview {
-    padding-top: 20px;
-    row-gap: 45px;
+    padding-top: 24px;
+    row-gap: 50px;
   }
   .quiz-preview__content {
     gap: 7px;
   }
   .quiz-preview__title {
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 21px;
+    line-height: 28px;
   }
   .quiz-preview__desc {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 19px;
   }
   .quiz-preview__btn {
-    padding: 15px 30px;
-    font-size: 10px;
+    padding: 16px;
+    font-size: 11px;
   }
   .quiz-game {
     gap: 16px;
