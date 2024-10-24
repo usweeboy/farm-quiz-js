@@ -58,7 +58,6 @@ popupController({
 });
 
 
-
 // Квиз
 const quizItems = document.querySelectorAll("[data-quiz-game]");
 
@@ -78,8 +77,11 @@ if (quizItems.length) {
       quizPlay.addEventListener("click", (e) => {
         e.preventDefault();
 
+        // quizItem.classList.add("active");
+
         quizBeginning.classList.add("_hidden");
         quizPreview.classList.remove("_hidden");
+
 
         quizItem.scrollIntoView({ behavior: "smooth" });
       });

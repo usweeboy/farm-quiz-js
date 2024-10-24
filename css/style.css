@@ -231,7 +231,7 @@ body {
   transition: all var(--transition-duration) ease-out;
 }
 
-.quiz-top.active .quiz-top__arrow {
+.quiz-top._spoller-active .quiz-top__arrow {
   transform: rotate(180deg);
 }
 
